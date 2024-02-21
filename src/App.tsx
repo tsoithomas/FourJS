@@ -8,8 +8,10 @@ function App() {
   return (
     <>
 
+    <div className='fourjs'>
     <Canvas width={500} height={500} size={5} />
-
+    <div className='piece'>aaa</div>
+    </div>
     </>
   )
 }

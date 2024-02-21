@@ -13,7 +13,7 @@ export function Canvas(props: CanvasProps) {
 	useEffect(() => {
 		const c = canvasRef.current;
 		const ctx = c.getContext('2d');
-		ctx.fillStyle = 'red';
+		ctx.fillStyle = 'pink';
 
 		ctx.rect(0, 0, props.width, props.height);
 
@@ -37,5 +37,5 @@ export function Canvas(props: CanvasProps) {
 
 	}, []);
 
-	return <canvas ref={canvasRef} width={props.width} height={props.height} />;
+	return <canvas ref={canvasRef} width={props.width} height={props.height} className='gameboard'/>;
 }
